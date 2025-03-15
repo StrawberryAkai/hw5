@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Portfolio Website",
+        "image": "images/portfolio.jpg",
+        "description": "A responsive portfolio website showcasing my work.",
+        "link": "https://myportfolio.com"
+    },
+    {
+        "title": "E-commerce App",
+        "image": "images/ecommerce.jpg",
+        "description": "An online store built with React and Firebase.",
+        "link": "https://myecommerceapp.com"
+    },
+    {
+        "title": "Weather App",
+        "image": "images/weather.jpg",
+        "description": "A weather app using OpenWeatherMap API.",
+        "link": "https://myweatherapp.com"
+    },
+    {
+        "title": "Blog Platform",
+        "image": "images/blog.jpg",
+        "description": "A blogging platform built with Node.js and Express.",
+        "link": "https://myblogplatform.com"
+    },
+    {
+        "title": "Chat Application",
+        "image": "images/chat.jpg",
+        "description": "A real-time chat application using WebSocket.",
+        "link": "https://mychatapp.com"
+    }
+]

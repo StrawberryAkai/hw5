@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/contact.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="/"><span class="nav-section">Home</span></a>
+            <a href="about.html"><span class="nav-section">About Me</span></a>
+            <a href="contact.html"><span class="nav-section">Contact</span></a>
+            <a href="form-no-js.html"><span class="nav-section">Form No JavaScript</span></a>
+        </nav>
+
+        <button id="toggle-theme">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <div id="contact">
+            <form id="contact-form" action="https://httpbin.org/post" method="post" novalidate>
+                <fieldset>
+
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Name: <span style="color: red">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="errors">
+                        <output id="name-error" class="msg-error" name="msg-error">Only letter and space are allowed!</output>
+                        <output id="name-missing-error" class="missing-error" name="missing-error">Please enter your Name</output>
+                    </div>
+                    
+                    <br>
+
+                    <label for="email">Email: <span style="color: red">*</span></label>
+                    <input type="text" id="email" name="email" required>
+                    <div class="errors">
+                        <output id="email-error" class="msg-error" name="msg-error">Invalid email format!</output>
+                        <output id="email-missing-error" class="missing-error">Please enter your email</output>
+                    </div>
+
+                    <br>
+
+                    <label for="message">Comment: <span style="color: red">*</span></label>
+                    <textarea id="message" name="message" required maxlength="10"></textarea>
+                    <div id="message-info">10 characters remaining</div>
+                    <div class="errors">
+                        <output id="message-error" class="msg-error">Message must be between 10 and 200 words!</output>
+                        <output id="message-missing-error" class="missing-error">Please enter your message</output>
+                    </div>
+
+                    <br>
+
+                    <input type="hidden" name="possible_bot" value="true">
+
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            Email: <a href="mailto:your.email@example.com">zihun1392@gmail.com</a>
+        </address>
+
+        <aside>
+            <i>Github</i>: <a href="https://github.com/yourusername" target="_blank">github</a>
+            <i>LinkedIn</i>: <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin</a>
+        </aside>
+    </footer>
+
+    <noscript>
+        <div class="noscript-warning">
+            <p>Please enable JavaScript to view this website properly.</p>
+        </div>
+    </noscript>
+
+</body>
+</html>
