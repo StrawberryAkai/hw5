@@ -123,7 +123,7 @@ function loadLocalProjects() {
 
 // Function to load projects from My JSON Server
 function loadRemoteProjects() {
-    fetch("https://my-json-server.typicode.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/projects") // Replace with your My JSON Server URL
+    fetch("https://my-json-server.typicode.com/StrawberryAkai/hw5") // Replace with your My JSON Server URL
         .then(response => response.json())
         .then(data => {
             addProjectCards(data);
