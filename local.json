@@ -1,0 +1,14 @@
+{
+    "project 1": [
+        {"title": "Personal Portfolio Website"},
+        {"image": "img/bg.jpg"},
+        {"description": "A responsive portfolio website showcasing my work."},
+        {"link": "/"}
+    ],
+    "project 2": [
+        {"title": "Triple C Management System"},
+        {"image": "img/triplec.png"},
+        {"description": "An admin management system for their website."},
+        {"link": "/"}
+    ]
+}

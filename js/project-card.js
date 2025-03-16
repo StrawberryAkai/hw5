@@ -103,7 +103,7 @@ if (savedProjects) {
 }
 
 // Fetch additional projects from JSON file
-fetch("db.json")
+fetch("local.json")
     .then(response => response.json())
     .then(data => {
         addProjectCards(data);
