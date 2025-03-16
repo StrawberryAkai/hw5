@@ -118,6 +118,7 @@ function loadLocalProjects() {
     const savedProjects = localStorage.getItem("projects");
     if (savedProjects) {
         addProjectCards(JSON.parse(savedProjects));
+        console.log("Local projects loaded successfully.");
     } else {
         console.warn("No local projects found.");
     }
@@ -129,6 +130,7 @@ function loadRemoteProjects() {
         .then(response => response.json())
         .then(data => {
             addProjectCards(data);
+            console.log("Remote projects loaded successfully.");
         })
         .catch(error => console.error("Error fetching remote projects:", error));
 }
