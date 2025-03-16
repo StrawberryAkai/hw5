@@ -48,6 +48,7 @@ class ProjectCard extends HTMLElement {
                     height: 180px;
                     object-fit: cover;
                     border-bottom: 2px solid var(--primary-color, #3498db);
+                    loading: lazy;
                 }
                 h2 {
                     font-size: 1.5rem;
@@ -131,3 +132,32 @@ function loadRemoteProjects() {
         })
         .catch(error => console.error("Error fetching remote projects:", error));
 }
+
+const text = "Andy! A Computer Science major with substantial software engineering experience, including an internship at Guardant Health, the Triple C project, and various course projects. I'm always eager to embrace new technologies within the software field to enrich my software engineering career.";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 50);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", typeEffect);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const resumeBtn = document.querySelector(".download-btn");
+
+    resumeBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const link = document.createElement("a");
+        link.href = "files/resume.pdf";
+        link.download = "Andy_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+});
+

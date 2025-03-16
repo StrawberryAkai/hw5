@@ -4,62 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/index.css">
-    <style>
-        section {
-            border-color: black;
-            border-style: solid;
-        }
-    </style>
+    <link rel="stylesheet" href="css/projects-card.css">
 </head>
 <body>
-    <header>
-
-        <h1>Welcome to My Portfolio</h1>
+    <header class="header">
+        <h1>Welcome To My Portfolio</h1>
         <nav>
             <a href="/"><span class="nav-section">Home</span></a>
-            <a href="project-card.html"><span class="nav-section">About Me</span></a>
             <a href="contact.html"><span class="nav-section">Contact</span></a>
-            <a href="form-no-js.html"><span class="nav-section">Form No JavaScript</span></a>
         </nav>
     </header>
 
-    <hr>
-
     <main>
+        <section id="about">
+            <h2>Hello! My name is <span id="typing-text"></span></h2>
+        </section>
+
+        <section id="resume">
+            <a href="files/Resume.pdf" download="Andy_Resume.pdf" class="download-btn">
+                📄 Download My Resume
+            </a>
+        </section>
+
+        <section id="Skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Java</li>
+                <li>C++</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="button-container">
+                <button id="local" onclick="loadLocalProjects()">LoadLocal</button>
+                <button id="remote" onclick="loadRemoteProjects()">LoadRemote</button>
+            </div>
+            <div id="projects-container">
+            </div>
+        </section>
     </main>
-
-    <dialog id="welcome-dialog" class="dialog" open>
-        <blockquote cite="https://cse.ucsd.edu/people/faculty-profiles/faculty">
-            <p>Start early, start often</p>
-            <cite>
-                <a href="https://cse.ucsd.edu/people/faculty-profiles/faculty">UCSD CSE Professors</a>
-            </cite>
-        </blockquote>
-        <form method="dialog">
-            <button id="close-dialog">Close</button>
-        </form>
-    </dialog>
-
-
-    <hr>
 
     <footer>
         <address>
-            Email: <a href="mailto:your.email@example.com">zihun1392@gmail.com</a>
+            Email: <a href="mailto:zihun1392@example.com">zihun1392@gmail.com</a>
         </address>
-
+        <br>
         <aside>
-            <i>Github</i>: <a href="https://github.com/yourusername" target="_blank">github</a>
-            <i>LinkedIn</i>: <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin</a>
+            <i>Github</i>: <a href="https://github.com/StrawberryAkai" target="_blank">github</a>
+            <i>LinkedIn</i>: <a href="https://www.linkedin.com/in/zhao-pei-liang-67381a272/" target="_blank">linkedin</a>
         </aside>
     </footer>
 
     <noscript>
         <div class="noscript-warning">
-            <p> Please enable JavaScript to view this website properly.</p>
+            <p>Please enable JavaScript to view this website properly.</p>
         </div>
     </noscript>
 
+    <script src="js/project-card.js"></script>
+    
 </body>
 </html>

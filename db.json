@@ -3,13 +3,13 @@
         {"title": "Personal Portfolio Website"},
         {"image": "img/bg.jpg"},
         {"description": "A responsive portfolio website showcasing my work."},
-        {"link": "https://myportfolio.com"}
+        {"link": "/"}
     ],
     "project 2": [
         {"title": "Triple C Management System"},
         {"image": "img/triplec.png"},
         {"description": "An admin management system for their website."},
-        {"link": "https://github.com/TripleC-OfficialWebsite/TripleC-HRManagementSys"}
+        {"link": "/"}
     ],
     "project 3": [
         {"title": "NoteWorthy"},

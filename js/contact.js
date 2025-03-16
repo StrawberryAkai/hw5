@@ -1,14 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
-    const name = document.getElementById("name");
-    const email = document.getElementById("email");
     const message = document.getElementById("message");
     const messageInfo = document.getElementById("message-info");
-    const maxLength = 10;
+    const maxLength = 300;
     const errorTimeout = 3000;
-
-    const themeToggle = document.getElementById("toggle-theme");
-    const body = document.body;
 
     let errors = [];
 
@@ -89,24 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         if (!valid) event.preventDefault();
-    });
-
-    if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark-mode");
-        themeToggle.textContent = "☀️ Light Mode";
-    }
-
-    themeToggle.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
-
-        // Save user preference
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("theme", "dark");
-            themeToggle.textContent = "☀️ Light Mode";
-        } else {
-            localStorage.setItem("theme", "light");
-            themeToggle.textContent = "🌙 Dark Mode";
-        }
     });
 });
 

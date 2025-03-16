@@ -9,15 +9,6 @@
     --transition-speed: 0.3s;
 }
 
-.dark-mode {
-    --background-color: #595555;
-    --text-color: #ffffff;
-    --primary-color: #1e88e5;
-    --secondary-color: #333;
-    --button-bg: #dddddd;
-    --button-text: #000000;
-}
-
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -159,10 +150,13 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), transform 0.2s;
 }
 
 button:hover {
     background-color: #2980b9;
+    transform: scale(1.05);
 }
 
 input.error, textarea.error{
