@@ -84,12 +84,13 @@ customElements.define("project-card", ProjectCard);
 function addProjectCards(projects) {
     const container = document.querySelector("#projects-container");
     container.innerHTML = "";
-    projects.forEach(project => {
+    Object.values(projects).forEach(project => {
+        const projectData = Object.assign({}, ...project);
         const card = document.createElement("project-card");
-        card.setAttribute("title", project.title);
-        card.setAttribute("image", project.image);
-        card.setAttribute("description", project.description);
-        card.setAttribute("link", project.link);
+        card.setAttribute("title", projectData.title);
+        card.setAttribute("image", projectData.image);
+        card.setAttribute("description", projectData.description);
+        card.setAttribute("link", projectData.link);
         container.appendChild(card);
     });
 }
@@ -111,7 +112,7 @@ fetch("db.json")
     })
     .catch(error => console.error("Error fetching projects:", error));
 
-    // Function to load projects from localStorage
+
 function loadLocalProjects() {
     const savedProjects = localStorage.getItem("projects");
     if (savedProjects) {
@@ -121,13 +122,12 @@ function loadLocalProjects() {
     }
 }
 
-// Function to load projects from My JSON Server
+
 function loadRemoteProjects() {
-    fetch("https://my-json-server.typicode.com/StrawberryAkai/hw5") // Replace with your My JSON Server URL
+    fetch("https://my-json-server.typicode.com/StrawberryAkai/hw5/db")
         .then(response => response.json())
         .then(data => {
             addProjectCards(data);
-            localStorage.setItem("projects", JSON.stringify(data));
         })
         .catch(error => console.error("Error fetching remote projects:", error));
 }

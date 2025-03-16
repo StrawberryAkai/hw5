@@ -1,32 +1,20 @@
-[
-    {
-        "title": "Portfolio Website",
-        "image": "images/portfolio.jpg",
-        "description": "A responsive portfolio website showcasing my work.",
-        "link": "https://myportfolio.com"
-    },
-    {
-        "title": "E-commerce App",
-        "image": "images/ecommerce.jpg",
-        "description": "An online store built with React and Firebase.",
-        "link": "https://myecommerceapp.com"
-    },
-    {
-        "title": "Weather App",
-        "image": "images/weather.jpg",
-        "description": "A weather app using OpenWeatherMap API.",
-        "link": "https://myweatherapp.com"
-    },
-    {
-        "title": "Blog Platform",
-        "image": "images/blog.jpg",
-        "description": "A blogging platform built with Node.js and Express.",
-        "link": "https://myblogplatform.com"
-    },
-    {
-        "title": "Chat Application",
-        "image": "images/chat.jpg",
-        "description": "A real-time chat application using WebSocket.",
-        "link": "https://mychatapp.com"
-    }
-]
+{
+    "project 1": [
+        {"title": "Personal Portfolio Website"},
+        {"image": "img/bg.jpg"},
+        {"description": "A responsive portfolio website showcasing my work."},
+        {"link": "https://myportfolio.com"}
+    ],
+    "project 2": [
+        {"title": "Triple C Management System"},
+        {"image": "img/triplec.png"},
+        {"description": "An admin management system for their website."},
+        {"link": "https://github.com/TripleC-OfficialWebsite/TripleC-HRManagementSys"}
+    ],
+    "project 3": [
+        {"title": "NoteWorthy"},
+        {"image": "img/notebook.jpg"},
+        {"description": "Online note taking application that support markdown."},
+        {"link": "https://cse112-sp24-group2.github.io/NoteWorthy/"}
+    ]
+}

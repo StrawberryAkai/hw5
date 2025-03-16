@@ -11,7 +11,7 @@
         <h1>About Me</h1>
         <nav>
             <a href="/"><span class="nav-section">Home</span></a>
-            <a href="about.html"><span class="nav-section">About Me</span></a>
+            <a href="project-card.html"><span class="nav-section">About Me</span></a>
             <a href="contact.html"><span class="nav-section">Contact</span></a>
             <a href="form-no-js.html"><span class="nav-section">Form No JavaScript</span></a>
         </nav>
@@ -42,33 +42,11 @@
 
         <section id="projects">
             <h2>My Projects</h2>
-            <button id="local" onclick="loadLocalProjects()">LoadLocal</button>
-            <button id="remote" onclick="loadRemoteProjects()">LoadRemote</button>
+            <div class="button-container">
+                <button id="local" onclick="loadLocalProjects()">LoadLocal</button>
+                <button id="remote" onclick="loadRemoteProjects()">LoadRemote</button>
+            </div>
             <div id="projects-container">
-                <project-card 
-                    title="Portfolio Website" 
-                    image="img/bear.jpg" 
-                    alt-text="A screenshot of my portfolio website"
-                    description="A responsive portfolio website showcasing my work." 
-                    link="https://myportfolio.com">
-                </project-card>
-
-                <project-card 
-                    title="Management System" 
-                    image="img/ucsd.png" 
-                    alt-text="A screenshot of project"
-                    description="A management system for organizing tasks and projects." 
-                    link="https://myportfolio.com">
-                </project-card>
-
-                </project-card>
-                    <project-card 
-                    title="Placement" 
-                    image="img/miku.jpg" 
-                    alt-text="image card"
-                    description="Example text." 
-                    link="https://myportfolio.com">
-                </project-card>
             </div>
         </section>
     </main>
